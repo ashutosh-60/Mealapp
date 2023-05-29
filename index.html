@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealApp</title>
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68592e5eee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- FAVOURITE MENU -->
+    <div class="fav-food-menu-icon">
+        <button type="submit" class="btn fav-btn-menu" id = 'fav-btn-menu'>
+            <span>Favourites</span>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="fav-food-menu hidden">
+            <div class="menu-title-header">
+                <h3 class="menu-title"> Favourite Meals</h3>
+                <i class = "fas fa-times menu-close-btn" id = "menu-close-btn"></i>
+            </div>
+            <div class="fav-food-list">
+                <!-- <div class="fav-food-list-item">
+                        <div class = "fav-meal-img">
+                            <img src = 'burger.jpg' alt = 'food'/>
+                        </div>
+                        <div class="fav-meal-name">
+                            <h3>Burger</h3>
+                            <a href="#" translate="_blank" class="fav-video-link">Watch Video</a>
+                        </div>
+                    <div class="remove-fav">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MAIN MEAL CONTENT -->
+    <div class="container">
+        <div class = "meal-search">
+            <h2 class="title"> Find Meals For Your Ingredients</h2>
+            <div class="meal-search-box">
+                <input type="text" class="search-control" placeholder="Enter an Ingredients" id = "search-input">
+                <button type="submit" class="search-btn btn" id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div class="meal-result hidden">
+            <h2 class="title">Your Search Result:</h2>
+            <div id = 'meal'>
+                <!-- meal item -->
+                <!-- <div class="meal-item" data-id="123">
+                    <div class = "fav-button">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class = "meal-img">
+                        <img src = 'burger.jpg' alt = 'food'/>
+                    </div>
+                    <div class="meal-name">
+                        <h3>Burger</h3>
+                        <a href="#" class="recipe-btn" id="recipe-btn">Get Recipe</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    
+        <!-- MEAL DETAILS -->
+        <div class = "meal-details">
+            <!-- recipe close btn -->
+            <button type = "button" class = "btn recipe-close-btn">
+              <i class = "fas fa-times" id = "close-btn"></i>
+            </button>
+    
+            <!-- meal content -->
+            <div class = "meal-details-content">
+              <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+              <p class = "recipe-category">Category Name</p>
+              <div class = "recipe-instruction">
+                <h3>Instructions:</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+              </div>
+              <div class = "recipe-meal-img">
+                <img src = "burger.jpg" alt = "food">
+              </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js "></script>
+</body>
+</html>
