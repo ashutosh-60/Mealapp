@@ -34,8 +34,8 @@ function addFoodToDOM(food, status){
 function renderList(list){
     html = ''
     for (let i = 0; i < list.length; i++){
-        const storedFav = JSON.parse(localStorage.getItem("favFood"))
-        const isAvailable = storedFav.filter(function(food){
+        const storedFav = JSON.parse(localStorage.getItem("favFood")) || []
+        const isAvailable = storedFav.filter(function(food){ 
             return food.idMeal === list[i].idMeal
         })
         list[i].status = isAvailable.length ? true : false;
